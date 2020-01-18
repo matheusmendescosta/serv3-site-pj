@@ -1,7 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import _index from './pages/home-site/_index.js';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Pages/HomeSite';
+import GlobalStyle from './styles/global';
 
-ReactDOM.render(<_index />, document.getElementById('root'));
+ReactDOM.render(
+    <>
+    <Home />
+    <GlobalStyle></GlobalStyle>
+    </>
+    , document.getElementById('root')
+);
 
