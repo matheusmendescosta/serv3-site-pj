@@ -14,7 +14,7 @@ export const Container = styled.div`
   flex-direction:row;
   justify-content:flex-start;
   align-items: center;
-  /*opacity:0.50;*/
+  justify-content: space-between;
   @keyframes fadeDropdown {
     0% {
         opacity: 0;
@@ -45,12 +45,14 @@ export const IntemLink = styled.ul`
   margin: 0;
   padding: 0;
   text-align: center;
+  float: right;
 `;
 export const Link = styled.li`
+  font-family: 'Roboto', sans-serif;
   display: block;
   float: left;
   text-decoration: none;
   text-align: center;
-  padding:14px 10px;
+  padding:20px 10px;
   color:${colors.white};
 `;

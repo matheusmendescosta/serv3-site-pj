@@ -15,16 +15,18 @@ export default function Navbar() {
       <Container>
         <ContainerLogo>
           <Logo src={logo}/>
-          <ContainerLink>
+        </ContainerLogo>
+        <ContainerLink>
             <IntemLink>
               <Link>Inicio</Link>
               <Link>Cadastrar</Link>
               <Link>Equipe</Link>
               <Link>Quem Somos</Link>
               <Link>Apresentação</Link>
+              <Link>Detalhes</Link>
+              <Link>Contato</Link>
             </IntemLink>
           </ContainerLink>
-        </ContainerLogo>
       </Container>
   );
 }
