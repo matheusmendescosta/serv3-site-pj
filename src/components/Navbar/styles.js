@@ -40,6 +40,7 @@ export const ContainerLink = styled.div`
   float: right;
   margin-top:20px;
 `;
+
 export const IntemLink = styled.ul`
   list-style-type: none;
   margin: 0;
@@ -47,6 +48,7 @@ export const IntemLink = styled.ul`
   text-align: center;
   float: right;
 `;
+
 export const Link = styled.li`
   font-family: 'Roboto', sans-serif;
   display: block;
@@ -55,4 +57,8 @@ export const Link = styled.li`
   text-align: center;
   padding:20px 10px;
   color:${colors.white};
+`;
+
+export const LinkHover = styled.a`
+  
 `;

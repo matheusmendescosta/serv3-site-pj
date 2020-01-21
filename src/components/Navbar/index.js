@@ -6,7 +6,8 @@ import {
   Logo,
   ContainerLink,
   Link,
-  IntemLink
+  IntemLink,
+  LinkHover
 } from './styles';
 
 
@@ -18,8 +19,12 @@ export default function Navbar() {
         </ContainerLogo>
         <ContainerLink>
             <IntemLink>
-              <Link>Inicio</Link>
-              <Link>Cadastrar</Link>
+              <Link>
+                <LinkHover>Inicio</LinkHover>
+              </Link>
+              <Link>
+                <LinkHover>Cadastrar</LinkHover>
+              </Link>
               <Link>Equipe</Link>
               <Link>Quem Somos</Link>
               <Link>Apresentação</Link>

@@ -5,6 +5,7 @@
   "dependencies": {
     "@bootstrap-styled/provider": "^2.0.2",
     "@bootstrap-styled/v4": "^3.3.0",
+    "@bumaga/tabs": "^0.2.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -15,6 +16,7 @@
     "react-id-swiper": "^2.4.0",
     "react-rotating-text": "^1.4.1",
     "react-scripts": "3.3.0",
+    "react-tab-list": "^1.1.1",
     "styled-components": "^5.0.0",
     "swiper": "^5.3.0"
   },
