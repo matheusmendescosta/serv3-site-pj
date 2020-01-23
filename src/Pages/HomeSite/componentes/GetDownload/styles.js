@@ -28,12 +28,12 @@ export const ContentText = styled.p`
 `;
 
 export const ContainerImage = styled.div`
-  padding-bottom:80px;
+  padding-top:15vh;
 `;
 
 export const Image = styled.img`
   display: relative;
   float: right;
   margin-right:25vh;
-  padding-bottom:0vh;
+  padding-bottom:10vh;
 `;

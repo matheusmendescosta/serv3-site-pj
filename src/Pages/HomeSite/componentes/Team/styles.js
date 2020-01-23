@@ -3,7 +3,7 @@ import colors from '../../../../Config/colors';
 
 export const Container = styled.div`
   width:100%;
-  height:30vh;
+  height:40vh;
   background-color: ${colors.SecondaryColor};
 `;
 

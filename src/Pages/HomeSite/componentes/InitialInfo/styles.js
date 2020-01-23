@@ -43,15 +43,17 @@ export const ContainerText = styled.div`
 `;
 
 export const TextTitle = styled.h1`
-  color:${colors.white};  
+  color:${colors.white};
+  font: 700 3rem/3rem "Montserrat", sans-serif;  
 `;
 
 export const SpanText = styled.span`
   color:${colors.SecondaryColor};
+  font: 900 2.9rem/3rem "Montserrat", sans-serif; 
 `;
 
 export const SimpleText = styled.p`
-  font:400 1rem/1.5rem "Open Sans", sans-serif;
+  font:400 1rem/1.5rem "Open Sans", sans-serif; 
   margin-top:10px;
   color:${colors.white}; 
 `;
