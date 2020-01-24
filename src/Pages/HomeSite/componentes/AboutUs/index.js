@@ -9,7 +9,8 @@ import {
     Title,
     Text,
     ButtonStylized,
-    TextPanel
+    TextPanel,
+    StyleButton,
  } from './styles';
 
 export default function AboutUs() {
@@ -27,7 +28,7 @@ export default function AboutUs() {
             <Title>
               <Tabs>
               <ButtonStylized>
-                  <Tab><button variant="light">Missão</button></Tab>
+                  <Tab><StyleButton>Missão</StyleButton></Tab>
                   <Tab><button>Visão</button></Tab>
                   <Tab><button>Valores</button></Tab>
               </ButtonStylized> 

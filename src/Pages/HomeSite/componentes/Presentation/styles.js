@@ -15,5 +15,6 @@ export const Text = styled.h1`
   color:${colors.white};
   text-align:center;
   padding-top:80px;
+  font: 700 3rem/3rem "Montserrat", sans-serif;
 `;
 

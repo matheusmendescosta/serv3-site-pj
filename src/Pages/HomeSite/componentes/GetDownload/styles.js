@@ -15,6 +15,7 @@ export const Text = styled.h1`
   color:${colors.white};
   padding-top: 25vh;
   padding-left:31vh;
+  font: 700 3rem/3rem "Montserrat", sans-serif;
 `;
 
 export const ContainerContentText = styled.div`
@@ -32,8 +33,5 @@ export const ContainerImage = styled.div`
 `;
 
 export const Image = styled.img`
-  display: relative;
-  float: right;
-  margin-right:25vh;
-  padding-bottom:10vh;
+
 `;

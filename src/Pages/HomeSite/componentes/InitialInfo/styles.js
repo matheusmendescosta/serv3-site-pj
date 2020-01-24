@@ -1,45 +1,56 @@
 import styled from 'styled-components';
 import colors from '../../../../Config/colors';
+import bg from '../../../../Assets/bg.jpg'
 
 export const Container = styled.div`
   width:100%;
-  height:99vh;
+  height:100vh;
   background-color: ${colors.black};
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   display: flex;
+
 `;
 
 export const ContainerBg = styled.div`
-  display: table;
-  width: 100%;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top: 120px;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  display:flex;
+  width: 100vw;
   height: 100vh;
-  padding: 100px 0;
+  background-image: url(${bg});
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
 `;
 
 export const Bg = styled.img`
-  width:100%;
-  height:112%;
+  width:100px;
+  height:112px;
 `;
 
-export const ContainerBgPhone = styled.div`
-  float:right;
-  margin-left:55%;
-  position:absolute;
-  margin-top:-40%;
+export const ContainerBgPhone = styled.div` 
+  /* flex: 1; */
+  /* display: flex; */
+  max-height:600px;
+  max-width:580px;
+  padding-left:50px;
+  /* background-color: black; */
 `;
 
 export const BgPhone = styled.img`
-  width: 500px;
-  height:500px;
+  width: 580px;
+  height:600px;
 `;
 
 export const ContainerText = styled.div`
-  position: absolute;
-  float: right;
-  margin-left:20%;
-  margin-top: -30%;
+  /* background-color:black; */
+  padding-right: 50px;
+  
 `;
 
 export const TextTitle = styled.h1`

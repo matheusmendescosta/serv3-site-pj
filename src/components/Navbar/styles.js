@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import colors from '../../Config/colors';
 
 export const Container = styled.div`
+  max-height: 120px;
   width:100%;
   padding-top: 8px;
   padding:20px;
@@ -15,6 +16,7 @@ export const Container = styled.div`
   justify-content:flex-start;
   align-items: center;
   justify-content: space-between;
+  
   @keyframes fadeDropdown {
     0% {
         opacity: 0;
@@ -31,8 +33,8 @@ export const ContainerLogo = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 110px;
-  height:110px;
+  width: 90px;
+  height:90px;
 `;
 
 export const ContainerLink = styled.div`

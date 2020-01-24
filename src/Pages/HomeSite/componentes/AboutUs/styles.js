@@ -14,7 +14,8 @@ export const ContainerTitle = styled.div`
 export const Title = styled.h1`
   text-align:center;
   color:${colors.white};
-  padding-top:60px;   
+  padding-top:60px;
+  font: 700 3rem/3rem "Montserrat", sans-serif;     
 `;
 
 export const ContainerText = styled.div`
@@ -33,5 +34,10 @@ export const ButtonStylized = styled.div`
 `;
 
 export const TextPanel = styled.p`
+  font-size:10px;
+`;
+
+export const StyleButton = styled.button`
+  background-color:${colors.SecondaryColor};
   font-size:15px;
 `;

@@ -22,10 +22,8 @@ export default function InitialInfo() {
   return (
     <Container>
       <ContainerBg>
-        <Bg src={bg}/>
-          <ContainerBgPhone>
-            <BgPhone src={bgPhone}/>
-          </ContainerBgPhone>
+        {/* <Bg src={bg}/> */}
+
           <ContainerText>
             <TextTitle>
               SERV3 APP <br /> É
@@ -38,7 +36,10 @@ export default function InitialInfo() {
               A Serv3 é uma plataforma digital, que através de um app, <br/>
               conecta pessoas a serviços de uma forma simples e segura!
             </SimpleText>
-          </ContainerText>
+          </ContainerText> 
+          <ContainerBgPhone>
+            <BgPhone src={bgPhone}/>
+          </ContainerBgPhone>
       </ContainerBg>
     </Container>
   );
