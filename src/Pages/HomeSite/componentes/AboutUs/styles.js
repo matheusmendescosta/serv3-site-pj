@@ -24,7 +24,7 @@ export const ContainerText = styled.div`
 
 export const Text = styled.p`
   text-align:center;
-  padding-top:10px;
+  /* padding-top:10px; */
   color:${colors.white};
   font-size:20px;
 `;
@@ -34,10 +34,16 @@ export const ButtonStylized = styled.div`
 `;
 
 export const TextPanel = styled.p`
-  font-size:10px;
+	margin-bottom: 3.75rem;
+	text-align: center;
+  font: 400 1rem/1.5rem "Open Sans", sans-serif;
+`;
+
+export const ContainerStyleButton = styled.div`
+
 `;
 
 export const StyleButton = styled.button`
-  background-color:${colors.SecondaryColor};
-  font-size:15px;
+  color:${colors.SecondaryColor};
+  font-size:20px;
 `;

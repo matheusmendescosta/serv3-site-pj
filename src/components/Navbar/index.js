@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from '../../Assets/logo.png'
+import {Link} from 'react-router-dom';
+import logo from '../../Assets/logo.png';
 import { 
   Container,
   ContainerLogo,
   Logo,
   ContainerLink,
-  Link,
+  // Link,
   IntemLink,
   LinkHover
 } from './styles';
@@ -23,7 +24,9 @@ export default function Navbar() {
                 <LinkHover>Inicio</LinkHover>
               </Link>
               <Link>
-                <LinkHover>Cadastrar</LinkHover>
+                <LinkHover>
+                <Link to="./Cadastre">Cadastrar</Link>  
+                </LinkHover>
               </Link>
               <Link>Equipe</Link>
               <Link>Quem Somos</Link>
