@@ -4,5 +4,6 @@ export default {
     grey: '#BDBDBD',
     colorNavbar:'#151515',
     SecondaryColor: '#FF4000',
-    AboutUsColor: '#151515'
+    AboutUsColor: '#151515',
+    CadastreBgColor: '#E5E6F0',
 }
