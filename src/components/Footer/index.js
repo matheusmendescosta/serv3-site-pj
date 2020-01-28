@@ -7,10 +7,9 @@ import {
 export default function Footer() {
   return (
     <Container>
-        <Column flexGrow={1}>
-         <Row vertical='center'>
+         <Row vertical='center' wrap={true} horizontal='center'>
           
-                <Column flexGrow={1} horizontal='center'>
+                <Column vertical='center' flexGrow={4} horizontal='center'>
                     <AboutTitle>Sobre</AboutTitle>
                         <AboutText>
                             Somos uma empresa que de forma simples,<br /> 
@@ -19,23 +18,22 @@ export default function Footer() {
                 </Column>
           
           
-                <Column flexGrow={1} horizontal='center'>
+                <Column vertical='center' flexGrow={4} horizontal='center'>
                     <LinkTitle>Links Importantes</LinkTitle>
-                        <LinkText>
+                        <AboutText>
                             Somos uma empresa que de forma simples,<br /> 
                         uni pessoas a serviços!
-                        </LinkText>
+                        </AboutText>
                 </Column>
 
-                <Column flexGrow={1} horizontal='center'>
+                <Column vertical='center' flexGrow={4} horizontal='center'>
                     <LinkTitle>Links Importantes</LinkTitle>
-                        <LinkText>
+                        <AboutText>
                             Somos uma empresa que de forma simples,<br /> 
                         uni pessoas a serviços!
-                        </LinkText>
+                        </AboutText>
                 </Column>
          </Row>
-      </Column>
     </Container>
   );
 }

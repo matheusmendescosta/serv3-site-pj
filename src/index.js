@@ -5,8 +5,9 @@ import Home from './Pages/HomeSite';
 import Cadastre from './Pages/Cadastre';
 import GlobalStyle from './styles/global';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import ProveIdentity from './Pages/Cadastre/componentes/ProveIdentity';
-import SelectService from './Pages/Cadastre/componentes/SelectService';
+// import ProveIdentity from './Pages/Cadastre/ProveIdentity';
+// import SelectService from './Pages/Cadastre/SelectService';
+import Information from './Pages/Cadastre/Information';
 
 ReactDOM.render(
     <>
@@ -14,8 +15,9 @@ ReactDOM.render(
        <Switch>
          <Route path="/" exact={true} component={Home}></Route>
          <Route path="/Cadastre" exact component={Cadastre}></Route>
-         <Route path="/ProveIdentity" exact component={ProveIdentity}></Route>
-         <Route path="/SelectService" exact component={SelectService}></Route>
+         <Route path="/Information" exact component={Information}></Route>
+         {/* <Route path="/ProveIdentity" exact component={ProveIdentity}></Route>
+         <Route path="/SelectService" exact component={SelectService}></Route> */}
        </Switch>
        <GlobalStyle></GlobalStyle>
      </BrowserRouter>

@@ -16,20 +16,11 @@ export const Container = styled.div`
   justify-content:flex-start;
   align-items: center;
   justify-content: space-between;
-  
-  @keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 `;
 
 export const ContainerLogo = styled.div`
   padding-left:50px;
+  
 `;
 
 export const Logo = styled.img`
@@ -51,7 +42,7 @@ export const IntemLink = styled.ul`
   float: right;
 `;
 
-export const Link = styled.li`
+export const StyleLink = styled.li`
   font-family: 'Roboto', sans-serif;
   display: block;
   float: left;
@@ -59,6 +50,9 @@ export const Link = styled.li`
   text-align: center;
   padding:20px 10px;
   color:${colors.white};
+  a:hover{
+    color:${colors.SecondaryColor};
+  }
 `;
 
 export const LinkHover = styled.a`
