@@ -1,15 +1,108 @@
 import React from 'react';
 import {
-    Container,
+    ContentForm,
+    LabelFormLeft,
+    LabelFormRight,
+    InputForm,
+    RowForm,
+    ColumnForm,
  } 
 from './styles';
 import { Link } from 'react-router-dom';
-import Navbar from '../../../../components/Navbar';
 
 export default function Information() {
   return (
-    <Container>
-        <Navbar />
-    </Container>
+    
+    <ContentForm>
+        <RowForm>
+            <ColumnForm >
+                <LabelFormLeft>Primeiro Nome</LabelFormLeft>
+                <InputForm name="fistName"/>                
+            </ColumnForm>
+
+            <ColumnForm >
+                <LabelFormRight>Segundo Nome</LabelFormRight>
+                <InputForm name="secondName"/>
+            </ColumnForm>
+        </RowForm>
+        <RowForm>
+            <ColumnForm >
+                <LabelFormLeft>Primeiro Nome</LabelFormLeft>
+                <InputForm name="fistName"/>                
+            </ColumnForm>
+            
+            <ColumnForm >
+                <LabelFormRight>Segundo Nome</LabelFormRight>
+                <InputForm name="secondName"/>
+            </ColumnForm>
+        </RowForm>
+        <RowForm>
+            <ColumnForm >
+                <LabelFormLeft>Primeiro Nome</LabelFormLeft>
+                <InputForm name="fistName"/>                
+            </ColumnForm>
+            
+            <ColumnForm >
+                <LabelFormRight>Segundo Nome</LabelFormRight>
+                <InputForm name="secondName"/>
+            </ColumnForm>
+        </RowForm>
+        <RowForm>
+            <ColumnForm >
+                <LabelFormLeft>Primeiro Nome</LabelFormLeft>
+                <InputForm name="fistName"/>                
+            </ColumnForm>
+            
+            <ColumnForm >
+                <LabelFormRight>Segundo Nome</LabelFormRight>
+                <InputForm name="secondName"/>
+            </ColumnForm>
+        </RowForm>
+        <RowForm>
+            <ColumnForm >
+                <LabelFormLeft>Primeiro Nome</LabelFormLeft>
+                <InputForm name="fistName"/>                
+            </ColumnForm>
+            
+            <ColumnForm >
+                <LabelFormRight>Segundo Nome</LabelFormRight>
+                <InputForm name="secondName"/>
+            </ColumnForm>
+        </RowForm>
+        <RowForm>
+            <ColumnForm >
+                <LabelFormLeft>Primeiro Nome</LabelFormLeft>
+                <InputForm name="fistName"/>                
+            </ColumnForm>
+            
+            <ColumnForm >
+                <LabelFormRight>Segundo Nome</LabelFormRight>
+                <InputForm name="secondName"/>
+            </ColumnForm>
+        </RowForm>
+        <RowForm>
+            <ColumnForm >
+                <LabelFormLeft>Primeiro Nome</LabelFormLeft>
+                <InputForm name="fistName"/>                
+            </ColumnForm>
+            
+            <ColumnForm >
+                <LabelFormRight>Segundo Nome</LabelFormRight>
+                <InputForm name="secondName"/>
+            </ColumnForm>
+        </RowForm>
+
+        <RowForm>
+            <ColumnForm >
+                <LabelFormLeft>Primeiro Nome</LabelFormLeft>
+                <InputForm name="fistName"/>                
+            </ColumnForm>
+            
+            <ColumnForm >
+                <LabelFormRight>Segundo Nome</LabelFormRight>
+                <InputForm name="secondName"/>
+            </ColumnForm>
+        </RowForm>
+    </ContentForm>
   );
 }

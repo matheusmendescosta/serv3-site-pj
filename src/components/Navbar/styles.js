@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import colors from '../../Config/colors';
+import px2vw from '../../Config/px2vw';
 
 export const Container = styled.div`
-  max-height: 120px;
+  height: 120px;
   width:100%;
-  padding-top: 8px;
-  padding:20px;
+  padding:${px2vw(20)};
   background-color: ${colors.colorNavbar};
   position: fixed;
   top:0;
@@ -13,13 +13,18 @@ export const Container = styled.div`
   right:0;
   display:flex;
   flex-direction:row;
-  justify-content:flex-start;
+  /* justify-content:flex-start; */
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width:800px){
+    padding:${px2vw(10)};
+    justify-content:center;
+  }
+
 `;
 
 export const ContainerLogo = styled.div`
-  padding-left:50px;
   
 `;
 
@@ -32,6 +37,10 @@ export const ContainerLink = styled.div`
   display: block;
   float: right;
   margin-top:20px;
+
+  @media (max-width:800px){
+    display:none;
+  }
 `;
 
 export const IntemLink = styled.ul`

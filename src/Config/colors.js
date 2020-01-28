@@ -16,5 +16,6 @@ export default {
     green:"#0B610B",
     blue:"#013ADF",
     grey:'#575757',
-    inactiveSwitch:'#BDBDBD'
+    inactiveSwitch:'#BDBDBD',
+    greylow:"#E4E4E4"
 }

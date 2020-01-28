@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
+
 import { 
   Container,
   // Content,
@@ -13,9 +14,20 @@ import {
   InputForm,
 } from './styles';
 import Navbar from '../../components/Navbar';
-import Information from './componentes/Information';
+import Information from '../Cadastre/componentes/Information/'
+import {Formik} from 'formik';
 
 export default function Cadastre() {
+
+  const [initialValues, setInitialValues ] = useState({
+    fistName: '',
+    secondName:''
+  });
+
+  function handleSubmit(){
+
+  }
+
   return (
     <Container>
     <Navbar />
@@ -30,8 +42,13 @@ export default function Cadastre() {
                   </DescCard> 
                 </HeaderTitle>
             </HeaderCard>
+            <Formik 
+              initialValues={initialValues}
+              onSubmit={handleSubmit}
+            >
               <Information />
-            </ContentCard>       
+            </Formik>  
+        </ContentCard>       
     </Container>
   );
 }

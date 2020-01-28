@@ -5,9 +5,9 @@ import Home from './Pages/HomeSite';
 import Cadastre from './Pages/Cadastre';
 import GlobalStyle from './styles/global';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Information from './Pages/Cadastre/componentes/Information';
 // import ProveIdentity from './Pages/Cadastre/ProveIdentity';
 // import SelectService from './Pages/Cadastre/SelectService';
-import Information from './Pages/Cadastre/Information';
 
 ReactDOM.render(
     <>

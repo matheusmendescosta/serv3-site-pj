@@ -11,6 +11,10 @@ export const Container = styled.div`
   display:flex;
   width: 100vw;
   height: 100vh;
+
+  @media (max-width:800px) {
+        padding-top:120px;
+    }
 `;
 
 // export const Content = styled.div`
@@ -20,7 +24,6 @@ export const Container = styled.div`
 
 export const ContentCard = styled.div`
     width: 45vw;
-    height: 100%;
     border-top-right-radius: 3vh;
     border-top-left-radius: 3vh;
     background-color:${colors.white};
@@ -31,6 +34,12 @@ export const ContentCard = styled.div`
     /* border-width: 1px;
     border-color:${colors.primary}; */
     border: 1px solid ${colors.primary};
+
+    @media (max-width:800px) {
+        width:100vw;
+        border-radius:0px;
+        border-width: 0px;
+    }
 `;
 
 export const HeaderCard = styled.div`
@@ -52,19 +61,44 @@ export const HeaderTitle = styled.div`
     border-bottom-left-radius: 3vh;
     background-color: ${colors.primary};
     padding: ${px2vw(15)};
+
+    @media (max-width:1500px) {
+        width:100%;
+        border-radius:3vh;
+    }
+
+    @media (max-width:800px) {
+        width:100%;
+        border-radius:0;
+    }
+
+
 `;
 
-export const TitleCard = styled.h2`
+export const TitleCard = styled.p`
+    font-size:${px2vw(20)};
     text-align: center;
     text-transform: uppercase;
     color:${colors.white};
+
+    @media (max-width:1500px) {
+        font-size:${px2vw(35)};
+    }
+
+    @media (max-width:800px) {
+        font-size:${px2vw(80)};
+    }
 `;
 
 export const DescCard = styled.p`
     font-size: ${px2vw(14)};
     text-align: center;
     text-transform: uppercase;
-    color:${colors.white};    
+    color:${colors.white};
+
+    @media (max-width:800px) {
+        font-size:${px2vw(50)};
+    }    
 `;
 
 export const ContentForm = styled.div`
