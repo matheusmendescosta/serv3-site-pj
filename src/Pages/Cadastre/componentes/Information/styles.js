@@ -29,27 +29,24 @@ export const ColumnForm = styled.div`
     justify-content: center;
     align-items: flex-start; 
     padding:10px;   
+
+    width:${props =>props.size ? props.size: 100}%;
+
+    @media (max-width:1500px) {
+        width:100%;
+    }
     /* background-color:red; */
 `;
 
-export const LabelFormRight = styled.label`
+export const LabelForm = styled.label`
     text-align:left;
     /* background-color:white; */
     width:100%;
     color:${colors.primary};
+    
 `;
 
-export const LabelFormLeft = styled.label`
-    text-align: left;
-    /* background-color:white; */
-    width:100%;
-    color:${colors.primary};
-`;
-
-export const InputForm = styled(Field).attrs({
-    placeholder:"digite seu nome",
-    type:"text",
-})`
+export const InputForm = styled(Field)`
         ::-webkit-input-placeholder { 
     color: ${colors.grey};
     }

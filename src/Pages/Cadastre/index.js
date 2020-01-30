@@ -16,6 +16,7 @@ import {
 import Navbar from '../../components/Navbar';
 import Information from '../Cadastre/componentes/Information/'
 import {Formik} from 'formik';
+import ProveIdentity from './componentes/ProveIdentity';
 
 export default function Cadastre() {
 
@@ -23,6 +24,13 @@ export default function Cadastre() {
     fistName: '',
     secondName:''
   });
+
+  const [steps, setSteps] = useState(1);
+
+  const [header, setHeader] = useState({
+    title: "Comprove sua identidade",
+    desc: "Aqui você pode comprovar sua identidade"
+  })
 
   function handleSubmit(){
 
@@ -35,19 +43,34 @@ export default function Cadastre() {
             <HeaderCard>
                 <HeaderTitle>
                   <TitleCard>
-                    Informções Pessoais
+                    {header.title}
                   </TitleCard>
                   <DescCard>
-                    Preencha suas informçãoes pessoais
+                    {header.desc}
                   </DescCard> 
                 </HeaderTitle>
             </HeaderCard>
-            <Formik 
-              initialValues={initialValues}
-              onSubmit={handleSubmit}
-            >
-              <Information />
-            </Formik>  
+            {
+              steps == 1 ? 
+              (
+                <Formik 
+                  initialValues={initialValues}
+                  onSubmit={handleSubmit} 
+                >
+                  <Information />
+                </Formik>
+              ):
+              steps == 2 ?
+              (
+                <Formik
+                  initialValues={initialValues}
+                  onSubmit={handleSubmit}
+                >
+                  <ProveIdentity />
+                </Formik>
+              ): (null)  
+            }
+
         </ContentCard>       
     </Container>
   );
