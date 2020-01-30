@@ -9,14 +9,18 @@ import {
   TitleCard,
   DescCard,
   HeaderTitle,
+  Button,
   ContentForm,
   LabelForm,
   InputForm,
+  ContentButton,
 } from './styles';
 import Navbar from '../../components/Navbar';
 import Information from '../Cadastre/componentes/Information/'
 import {Formik} from 'formik';
 import ProveIdentity from './componentes/ProveIdentity';
+import SelectService from './componentes/SelectService';
+import colors from '../../Config/colors';
 
 export default function Cadastre() {
 
@@ -36,6 +40,35 @@ export default function Cadastre() {
 
   }
 
+  function PressBack (){
+    switch (steps) {
+        case 1:
+          
+            break;
+        case 2:
+          setSteps(1)
+        break; 
+        case 3:
+          setSteps(2)
+        break; 
+        default:
+            break;
+    }
+};
+
+function PressContinue (){
+  switch (steps) {
+      case 1:
+        setSteps(2)  
+          break;
+      case 2:
+        setSteps(3)
+          break; 
+      default:
+          break;
+  }
+};
+
   return (
     <Container>
     <Navbar />
@@ -43,7 +76,9 @@ export default function Cadastre() {
             <HeaderCard>
                 <HeaderTitle>
                   <TitleCard>
-                    {header.title}
+                    {
+                    header.title
+                    }
                   </TitleCard>
                   <DescCard>
                     {header.desc}
@@ -68,10 +103,22 @@ export default function Cadastre() {
                 >
                   <ProveIdentity />
                 </Formik>
+              ): 
+              steps == 3 ?
+              (
+                <Formik
+                  initialValues={initialValues}
+                  onSubmit={handleSubmit}
+                >
+                  <SelectService />
+                </Formik>
               ): (null)  
             }
-
-        </ContentCard>       
+          <ContentButton>    
+            <Button background={(colors.primary)} onClick={PressBack}>Voltar</Button>
+            <Button onClick={PressContinue}>Avançar</Button>
+          </ContentButton>  
+        </ContentCard>
     </Container>
   );
 }

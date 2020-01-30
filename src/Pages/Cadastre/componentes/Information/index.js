@@ -10,6 +10,7 @@ from './styles';
 import { Link } from 'react-router-dom';
 
 export default function Information() {
+
   return (
     
     <ContentForm>
@@ -143,8 +144,6 @@ export default function Information() {
                     />     
             </ColumnForm>
         </RowForm>
-        <Link to="/ProveIdentity">Prosseguir</Link>
-        <Link to="/">Voltar</Link>
     </ContentForm>
   );
 }

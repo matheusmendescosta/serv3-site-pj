@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Title, Button } from './styles';
+import { 
+  Container, 
+  Title, 
+  Button 
+} from './styles';
 import { Link } from 'react-router-dom';
 
 export default function SelectService() {
@@ -15,8 +19,7 @@ export default function SelectService() {
     alert('selecionou');
   }
   return (
-    <Container>
-      <Title>Seleção de Serviço</Title>  
+    <Container> 
         <select className="custom-select"
         onChange={() => handleInputService()}
         >
@@ -27,9 +30,7 @@ export default function SelectService() {
           
           {}
 
-        <br />      
-        <Link to="">Salvar</Link> <br />
-        <Link to="/ProveIdentity">Voltar</Link> <br />
+        <br />
     </Container>
   );
 }

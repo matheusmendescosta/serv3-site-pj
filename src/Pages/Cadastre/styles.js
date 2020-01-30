@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import colors from '../../Config/colors';
 import px2vw from '../../Config/px2vw';
 
@@ -11,6 +11,7 @@ export const Container = styled.div`
   display:flex;
   width: 100vw;
   height: 100vh;
+  
 
   @media (max-width:800px) {
         padding-top:120px;
@@ -34,6 +35,7 @@ export const ContentCard = styled.div`
     /* border-width: 1px;
     border-color:${colors.primary}; */
     border: 1px solid ${colors.primary};
+    min-height: 100%;
 
     @media (max-width:800px) {
         width:100vw;
@@ -101,14 +103,19 @@ export const DescCard = styled.p`
     }    
 `;
 
-export const ContentForm = styled.div`
-
+export const ContentButton = styled.div`
+    justify-content: space-between;
+    padding-bottom:30px;  
 `;
 
-export const LabelForm = styled.form`
+export const Button = styled.button`
+  background: transparent;
+  border-radius: 8px;
+  border: 2px solid ${colors.primary};
+  color: ${colors.black};
+  margin: 0 1em;
+  padding: 0.25em 1em;
+  width:${px2vw(175)};
+  background-color: ${props =>props.background ? props.background:""};
+`
 
-`;
-
-export const InputForm = styled.input`
-
-`;

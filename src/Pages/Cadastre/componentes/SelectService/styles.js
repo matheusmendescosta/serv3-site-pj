@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import colors from '../../../../Config/colors';
 
 export const Container = styled.div`
-  background-color:${colors.CadastreBgColor};
+  /* background-color:${colors.CadastreBgColor}; */
 `;
 
 export const Title = styled.h1`
