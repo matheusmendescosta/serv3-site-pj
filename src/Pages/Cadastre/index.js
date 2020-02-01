@@ -32,8 +32,8 @@ export default function Cadastre() {
   const [steps, setSteps] = useState(1);
 
   const [header, setHeader] = useState({
-    title: "Comprove sua identidade",
-    desc: "Aqui você pode comprovar sua identidade"
+    title: "informações Pessoais",
+    desc: "Aqui você preenche suas informações pessoais"
   })
 
   function handleSubmit(){
@@ -59,10 +59,18 @@ export default function Cadastre() {
 function PressContinue (){
   switch (steps) {
       case 1:
-        setSteps(2)  
+        setSteps(2)
+        setHeader ({
+          title:"Comprove sua identidade",
+          desc: "Aqui você pode comprovar sua identidade"
+        })  
           break;
       case 2:
         setSteps(3)
+        setHeader ({
+          title:"Selecione os serviços",
+          desc: "Aqui você pode selecionar seus serviços"
+        }) 
           break; 
       default:
           break;

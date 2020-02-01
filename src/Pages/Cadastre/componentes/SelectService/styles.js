@@ -1,16 +1,24 @@
 import styled from 'styled-components';
 import colors from '../../../../Config/colors';
+import px2vw from '../../../../Config/px2vw';
 
 export const Container = styled.div`
   /* background-color:${colors.CadastreBgColor}; */
 `;
 
-export const Title = styled.h1`
-  font: 700 3rem/3rem "Montserrat", sans-serif;
-  text-align: center;
-  padding-top: 60px;
-`;
+export const Input = styled.input.attrs(props => ({
+  type: 'text',
+  placeholder: "Selecione um serviço",
+  // size: props.small ? 5 : undefined,
+}))`
+  border-radius: 5px;
+  border: 1px solid ${colors.primary};
+  display: block;
+  margin: 5vh;
+  width:${px2vw(400)};
+  padding: 8px;
 
-export const Button = styled.button`
-
-`;
+  ::placeholder {
+    color: ${colors.black};
+  }
+`
