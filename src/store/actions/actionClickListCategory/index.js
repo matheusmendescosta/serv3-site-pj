@@ -4,9 +4,9 @@ import {
 
 } from './actionTypes';
 
-export const setCategory = (category) => ({
+export const setCategorys = (categorys) => ({
     type: SET_CATEGORY,
-    category: category
+    category: categorys
 })
 
 export const setLoadingCategory = (loading) =>({
