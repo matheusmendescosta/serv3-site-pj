@@ -5,18 +5,18 @@ import {
 
 
 const initialState = {
-    categorys:[ 'pedreiro' ],
+    categorys:[ 'pedreiro', 'padeiro', 'programador' ],
     loading:false
 }
 
 export function clickListCategory (state = initialState, action){
     switch (action.type) {
         case SET_CATEGORY:
-            return{ ...state, categorys: action.category}
+            return{ ...state, categorys: action.categorys}
         break;
         
         case SET_LOADING_CATEGORY:
-            return{...state, loading: action.category}
+            return{...state, loading: action.categorys}
         break;
         default:
             return state;
