@@ -1,19 +1,32 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { 
-    Container 
+  Container,
+  // Content,
+  ContentCard,
+  HeaderCard,
+  TitleCard,
+  DescCard,
+  HeaderTitle,
+  Button,
+  ContentForm,
+  LabelForm,
+  InputForm,
+  ContentButton,
 } from './styles';
+import Navbar from '../../components/Navbar';
+import Information from '../Cadastre/componentes/Information/';
+import ProveIdentity from './componentes/ProveIdentity';
+import SelectService from './componentes/SelectService';
+import colors from '../../Config/colors';
 
 
 export default function ServiceCategory() {
 //    const category = useSelector(state => state.ServiceCategory.category);
   
     return (
-    // <Container>
-    //     olá mundo
-    //     <ul>
-    //         {category.map(setCategorys => <li key={category}>{category}</li>)}
-    //     </ul>
-    // </Container>
+      <Container>
+          ola mundo
+      </Container>
   );
 }

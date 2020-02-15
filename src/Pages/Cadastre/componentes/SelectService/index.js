@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { 
   Container, 
   Input, 
@@ -14,11 +14,13 @@ export default function SelectService() {
   const ListCategory = useSelector (state => state.categorys);
   
   return (
-    <Container>
-      <Input />  
-      <ul>
-        {ListCategory.map(categorys => <li key={categorys}>{categorys}</li>)}
-      </ul>
-    </Container>
+    <>  
+      <Container>
+        <Input />  
+        <ul>
+          {ListCategory.map(categorys => <li key={categorys}>{categorys}</li>)}
+        </ul>
+      </Container>
+    </>  
   );
 }
