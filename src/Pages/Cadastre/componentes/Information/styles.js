@@ -72,4 +72,5 @@ export const InputForm = styled(Field)`
     @media (max-width:1500px) {
         border-radius:${px2vw(35)};
     }
+    
 `;

@@ -21,6 +21,7 @@ import {Formik} from 'formik';
 import ProveIdentity from './componentes/ProveIdentity';
 import SelectService from './componentes/SelectService';
 import colors from '../../Config/colors';
+import ServiceCategory from './componentes/ServiceCategory';
 
 export default function Cadastre() {
 
@@ -50,7 +51,9 @@ export default function Cadastre() {
         break; 
         case 3:
           setSteps(2)
-        break; 
+        break;
+        case 4:
+          setSteps(3) 
         default:
             break;
     }
@@ -71,7 +74,13 @@ function PressContinue (){
           title:"Selecione os serviços",
           desc: "Aqui você pode selecionar seus serviços"
         }) 
-          break; 
+          break;
+      case 3:
+        setSteps(4)
+        setHeader ({
+          title: "Selecione a categoria que deseja atuar",
+          desc:"Aqui voce seleciona a categoria na qual desejas trabalhar"
+        })     
       default:
           break;
   }
@@ -120,13 +129,22 @@ function PressContinue (){
                 >
                   <SelectService />
                 </Formik>
-              ): (null)  
+              ): 
+              steps == 4 ?
+              (
+                <Formik
+                  initialValues={initialValues}
+                  onSubmit={handleSubmit}
+                >
+                  <ServiceCategory />
+                </Formik>
+              ):
+              (null)  
             }
           <ContentButton>    
             <Button background={(colors.primary)} onClick={PressBack}>Voltar</Button>
             <Button onClick={PressContinue}>Avançar</Button>
           </ContentButton>
-          {/* <button> <Link to="./ServiceCategory">Pross</Link> </button> */}
         </ContentCard>
     </Container>
   );

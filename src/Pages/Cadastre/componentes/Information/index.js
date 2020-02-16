@@ -146,4 +146,5 @@ export default function Information() {
         </RowForm>
     </ContentForm>
   );
+  
 }
