@@ -22,6 +22,8 @@ import ProveIdentity from './componentes/ProveIdentity';
 import SelectService from './componentes/SelectService';
 import colors from '../../Config/colors';
 import ServiceCategory from './componentes/ServiceCategory';
+import SelectProfission from './componentes/SelectProfission';
+import SelectServiceKit from './componentes/SelectServiceKit';
 
 export default function Cadastre() {
 
@@ -45,15 +47,28 @@ export default function Cadastre() {
     switch (steps) {
         case 1:
           
-            break;
+        break;
+        
         case 2:
           setSteps(1)
-        break; 
+        break;
+
         case 3:
           setSteps(2)
         break;
+        
         case 4:
-          setSteps(3) 
+          setSteps(3)
+        break;  
+        
+        case 5:
+          setSteps(5)
+        break;     
+        
+        case 6: 
+          setSteps(6)
+        break;
+
         default:
             break;
     }
@@ -78,9 +93,24 @@ function PressContinue (){
       case 3:
         setSteps(4)
         setHeader ({
-          title: "Selecione a categoria que deseja atuar",
+          title: "Selecione a categoria que deseja atuar/ Qual Serviço Procura?",
           desc:"Aqui voce seleciona a categoria na qual desejas trabalhar"
-        })     
+        })
+          break;
+      case 4:
+        setSteps(5)
+        setHeader ({
+          title: "Que tipo de profissional",
+          desc: "Aqui voce seleciona o profissional"
+        }) 
+          break;
+      case 5:
+        setSteps(6)
+        setHeader({
+          title: "Que tipo de kit",
+          desc: "Aqui voce seleciona os kits"
+        })        
+          break;
       default:
           break;
   }
@@ -93,9 +123,7 @@ function PressContinue (){
             <HeaderCard>
                 <HeaderTitle>
                   <TitleCard>
-                    {
-                    header.title
-                    }
+                    {header.title}
                   </TitleCard>
                   <DescCard>
                     {header.desc}
@@ -139,7 +167,24 @@ function PressContinue (){
                   <ServiceCategory />
                 </Formik>
               ):
-              (null)  
+              steps == 5 ?
+              (
+                <Formik
+                  initialValues={initialValues}
+                  onSubmit={handleSubmit}
+                >
+                  <SelectProfission />
+                </Formik>  
+              ):
+              steps == 6 ?
+              (
+                <Formik
+                  initialValues={initialValues}
+                  onSubmit={handleSubmit}
+                >
+                  <SelectServiceKit />
+                </Formik>  
+              ): (null)  
             }
           <ContentButton>    
             <Button background={(colors.primary)} onClick={PressBack}>Voltar</Button>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     ContentForm,
     InputForm,
@@ -7,9 +7,13 @@ import {
     ColumnForm,
  } 
 from './styles';
-import { Link } from 'react-router-dom';
-
 export default function Information() {
+
+    const [information, setInformation] = useState("Informações Pessoais");
+
+    useEffect(()=>{
+        document.title = `${information}`;
+    })
 
   return (
     

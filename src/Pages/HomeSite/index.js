@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import InitialInfo from './componentes/InitialInfo';
 import Navbar from '../../components/Navbar';
 import Team from './componentes/Team'
@@ -9,6 +9,12 @@ import Contact from './componentes/Contact';
 import Footer from '../../components/Footer';
 
 export default function HomeSite() {
+
+  const [home, setHome] = useState("Serv3");
+
+  useEffect(()=>{
+    document.title=`${home}`;
+  })
 
   return (
     <>

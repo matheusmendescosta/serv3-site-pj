@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Container,
   ContentForm,
@@ -10,6 +10,13 @@ import {
 import { Link } from 'react-router-dom';
 
 export default function ProveIdentity() {
+
+  const [ProveIdentity, setProveIdentity] = useState('Prove sua Identidade');
+
+  useEffect(()=>{
+    document.title=`${ProveIdentity}`;
+  })
+
   return (
     <Container>
       <ContentForm>

@@ -9,7 +9,6 @@ import { Provider } from 'react-redux';
 import Dashboard from './Pages/Dashboard';
 import Home from './Pages/HomeSite';
 import DashProfission from './Pages/Dashboard/DashProfission';
-// import Dashboard from './Pages/Dashboard/HomeProfission';
 
 ReactDOM.render(
     <>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { 
     Container,
@@ -6,9 +6,15 @@ import {
 } from './styles';
 
 export default function ServiceCategory() {
+
+  const [category, setCategory] = useState('Selecione a categoria');
+
+  useEffect(()=>{
+    document.title=`${category}`;
+  })
   return (
     <Container>
-        Olá Mundo
+        Aqui ta dando erro pra passar pra proxima page
     </Container>
   );
 }
