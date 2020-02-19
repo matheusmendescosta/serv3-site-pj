@@ -3,7 +3,6 @@ import {
     SET_LOADING_CATEGORY
 } from '../actions/actionClickListCategory/actionTypes';
 
-
 const initialState = {
     categorys:[ 'pedreiro', 'padeiro', 'programador' ],
     loading:false

@@ -62,11 +62,11 @@ export default function Cadastre() {
         break;  
         
         case 5:
-          setSteps(5)
+          setSteps(4)
         break;     
         
         case 6: 
-          setSteps(6)
+          setSteps(5)
         break;
 
         default:
@@ -93,7 +93,7 @@ function PressContinue (){
       case 3:
         setSteps(4)
         setHeader ({
-          title: "Selecione a categoria que deseja atuar/ Qual Serviço Procura?",
+          title: "Qual Serviço Procura?",
           desc:"Aqui voce seleciona a categoria na qual desejas trabalhar"
         })
           break;

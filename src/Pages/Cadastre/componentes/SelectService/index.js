@@ -16,15 +16,15 @@ export default function SelectService() {
   // function handleInputService(){
   //   alert('selecionou');
   // }
-  const ListCategory = useSelector (state => state.categorys);
+  // const ListCategory = useSelector (state => state.categorys);
   
   return (
     <>  
       <Container>
         <Input />  
-        <ul>
+        {/* <ul>
           {ListCategory.map(categorys => <li key={categorys}>{categorys}</li>)}
-        </ul>
+        </ul> */}
       </Container>
     </>  
   );

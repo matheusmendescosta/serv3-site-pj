@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { useSelector, useDispatch } from 'react-redux';
 import { 
     Container,
 
@@ -12,9 +12,14 @@ export default function ServiceCategory() {
   useEffect(()=>{
     document.title=`${category}`;
   })
+
+  const ListCategory = useSelector (state => state.categorys);
+
   return (
     <Container>
-        Aqui ta dando erro pra passar pra proxima page
+        <ul>
+          {ListCategory.map(categorys => <li key={categorys}>{categorys}</li>)}
+        </ul> 
     </Container>
   );
 }

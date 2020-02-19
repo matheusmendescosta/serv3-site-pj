@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 import { 
     Container 
@@ -11,9 +12,13 @@ export default function SelectProfission() {
         document.title=`${profission}`;
     })
 
+    const ListCategoryProffision = useSelector (state => state.categorys);
+
   return (
     <Container>
-        olá profissional
+        <ul>
+          {ListCategoryProffision.map(categorys => <li key={categorys}>{categorys}</li>)}
+        </ul> 
     </Container>
   );
 }
