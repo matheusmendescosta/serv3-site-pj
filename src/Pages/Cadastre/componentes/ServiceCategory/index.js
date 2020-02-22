@@ -19,7 +19,7 @@ export default function ServiceCategory() {
     <Container>
         <ul>
           {ListCategory.map(categorys => <li key={categorys}>{categorys}</li>)}
-        </ul> 
+        </ul>  
     </Container>
   );
 }

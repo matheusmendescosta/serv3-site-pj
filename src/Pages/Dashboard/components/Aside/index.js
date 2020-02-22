@@ -2,7 +2,7 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-export default function structure() {
+export default function Aside() {
   return (
     <div />
   );

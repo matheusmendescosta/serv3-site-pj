@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Swiper from 'react-id-swiper';
+
 import { 
     Container, 
     BannerSlide,
@@ -7,29 +8,36 @@ import {
 } from './styles';
 
 export default function Team() {
-     const params = {
-       slidesPerView: 1,
-       spaceBetween: 30,
-       slidesPerGroup: 1,
-       loop: true,
-       loopFillGroupWithBlank: true,
-       pagination: {
-         el: '.swiper-pagination',
-         clickable: true
-       },
-       navigation: {
-         nextEl: '.swiper-button-next',
-         prevEl: '.swiper-button-prev'
-       }
-     }
-
+  const params = {
+    pagination: '.swiper-pagination',
+    slidesPerView: 3,
+    paginationClickable: true,
+    spaceBetween: 30
+  };
   return (
     <>
     <Container>
-          <Swiper {...params}>
-            <div>Slide #1</div>
-            <button className="nextEl"></button>
-          </Swiper>
+      <Swiper {...params}>
+        
+        <BannerSlide>
+          <BannerSlideWorker>
+            slide 1
+          </BannerSlideWorker>
+        </BannerSlide>
+        
+        <BannerSlide>
+          <BannerSlideWorker>
+            slide 2
+          </BannerSlideWorker>
+        </BannerSlide>
+        
+        <BannerSlide>
+          <BannerSlideWorker>
+            slide 3
+          </BannerSlideWorker>
+        </BannerSlide>
+      
+      </Swiper>
     </Container>
     </>
   );

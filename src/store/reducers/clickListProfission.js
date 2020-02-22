@@ -1,5 +1,5 @@
 import {
-    SET_CATEGORY_PROFFISION,
+    SET_CATEGORY,
     SET_LOADING_CATEGORY
 } from '../actions/actionClickListProfission/actionTypes';
 
@@ -10,7 +10,7 @@ const initialState = {
 
 export function clickListProfission (state = initialState, action){
     switch (action.type) {
-        case SET_CATEGORY_PROFFISION:
+        case SET_CATEGORY:
             return{ ...state, categorys: action.categorys}
         break;
         

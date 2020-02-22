@@ -1,11 +1,11 @@
 import {
-    SET_CATEGORY_PROFFISION,
+    SET_CATEGORY,
     SET_LOADING_CATEGORY
 
 } from './actionTypes';
 
-export const setCategorysProfission = (Categorys) => ({
-    type: SET_CATEGORY_PROFFISION,
+export const setCategorys = (categorys) => ({
+    type: SET_CATEGORY,
     category: categorys
 })
 

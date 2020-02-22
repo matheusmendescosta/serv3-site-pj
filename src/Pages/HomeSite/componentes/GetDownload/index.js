@@ -8,8 +8,11 @@ import {
   ContainerContentText,
   ContentText,
   ContainerImage,
-  Image 
+  Image ,
+  ContentButton,
+  Button
 } from './styles';
+import colors from '../../../../Config/colors';
 
 export default function GetDownload() {
   return (
@@ -26,6 +29,12 @@ export default function GetDownload() {
                   tristique varius augue pellentesque quis.<br />
                   </ContentText>
                 </ContainerContentText>
+                
+                <ContentButton>    
+                  <Button background={(colors.SecondaryColor)} >Download Apple Store</Button>
+                  <Button >Download PlayStore</Button>
+                </ContentButton>
+            
             </ContainerText>
             </Column>
 
